@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <div className="relative bg-white dark:bg-black text-black dark:text-gray-200 scroll-smooth overflow-hidden">
 
-      {/* Static Glow Background (No Random = No Hydration Error) */}
+      {/* Background Glow */}
       <div className="absolute inset-0 -z-10">
         <div className="absolute w-[500px] h-[500px] bg-purple-500 rounded-full blur-[180px] opacity-20 top-[-150px] left-[-150px]" />
         <div className="absolute w-[500px] h-[500px] bg-blue-500 rounded-full blur-[180px] opacity-20 bottom-[-150px] right-[-150px]" />
@@ -49,7 +49,7 @@ export default function Home() {
               words={[
                 "Full Stack Developer",
                 "Backend Engineer",
-                "Data & AI Practitioner"
+                "AI & Data Practitioner"
               ]}
               loop
               cursor
@@ -61,8 +61,8 @@ export default function Home() {
           </p>
 
           <p className="max-w-3xl mx-auto text-gray-500 dark:text-gray-400">
-            Computer Science Graduate (B.Tech 2025) with industry experience
-            in backend systems, AI model development, and production-ready web applications.
+            B.Tech Computer Science (2025) graduate with industry experience in
+            backend systems, AI model development, and production-ready applications.
           </p>
 
           <div className="flex justify-center gap-6 pt-6 flex-wrap">
@@ -98,12 +98,12 @@ export default function Home() {
               Placify Technologies — Data Science & AI Intern
             </h3>
             <p className="text-gray-500 dark:text-gray-400">
-              September 2024 – December 2024
+              Sep 2024 – Dec 2024
             </p>
             <ul className="list-disc list-inside text-gray-500 dark:text-gray-400 space-y-2">
               <li>Developed AI models for aviation detection and segmentation.</li>
-              <li>Improved image processing pipelines and backend performance.</li>
-              <li>Worked with Git & Docker-based workflows.</li>
+              <li>Optimized image pipelines and backend services.</li>
+              <li>Worked with Docker & Git workflows.</li>
             </ul>
           </div>
 
@@ -112,12 +112,12 @@ export default function Home() {
               Placify Technologies — Full Stack Developer Intern
             </h3>
             <p className="text-gray-500 dark:text-gray-400">
-              February 2025 – September 2025
+              Feb 2025 – Sep 2025
             </p>
             <ul className="list-disc list-inside text-gray-500 dark:text-gray-400 space-y-2">
-              <li>Built Angular & NestJS production applications.</li>
-              <li>Implemented JWT authentication and REST APIs.</li>
-              <li>Optimized SEO and performance bottlenecks.</li>
+              <li>Built Angular & NestJS production apps.</li>
+              <li>Implemented JWT authentication & REST APIs.</li>
+              <li>Improved SEO & performance.</li>
             </ul>
           </div>
         </motion.section>
@@ -135,29 +135,91 @@ export default function Home() {
 
           <div className="grid md:grid-cols-2 gap-10">
 
+            {/* Project 1 */}
             <Tilt scale={1.02}>
-              <div className="p-8 rounded-2xl bg-white/40 dark:bg-white/5 border border-gray-300 dark:border-gray-800 space-y-4">
+              <div className="p-8 rounded-2xl bg-white/40 dark:bg-white/5 border border-gray-300 dark:border-gray-800 space-y-4 hover:shadow-xl transition">
                 <h3 className="text-2xl font-semibold text-blue-500">
-                  House Rental Price Prediction
+                  MERN Bookstore Platform
                 </h3>
                 <p className="text-gray-500 dark:text-gray-400">
-                  ML models using XGBoost & LightGBM deployed with FastAPI & Docker.
+                  Full-stack bookstore app with authentication, cart, and admin dashboard.
                 </p>
+                <div className="flex gap-4 pt-4">
+                  <a href="https://github.com/Nk-987" target="_blank"
+                    className="px-4 py-2 bg-gray-800 text-white rounded-lg text-sm">
+                    GitHub
+                  </a>
+                </div>
               </div>
             </Tilt>
 
+            {/* Project 2 */}
             <Tilt scale={1.02}>
-              <div className="p-8 rounded-2xl bg-white/40 dark:bg-white/5 border border-gray-300 dark:border-gray-800 space-y-4">
+              <div className="p-8 rounded-2xl bg-white/40 dark:bg-white/5 border border-gray-300 dark:border-gray-800 space-y-4 hover:shadow-xl transition">
                 <h3 className="text-2xl font-semibold text-blue-500">
-                  Weather Dashboard
+                  LMS Platform (Next.js)
                 </h3>
                 <p className="text-gray-500 dark:text-gray-400">
-                  Interactive dashboard using OpenWeather API & data visualization.
+                  Learning management system with role-based authentication and backend APIs.
                 </p>
+                <div className="flex gap-4 pt-4">
+                  <a href="https://github.com/Nk-987" target="_blank"
+                    className="px-4 py-2 bg-gray-800 text-white rounded-lg text-sm">
+                    GitHub
+                  </a>
+                </div>
+              </div>
+            </Tilt>
+
+            {/* Project 3 */}
+            <Tilt scale={1.02}>
+              <div className="p-8 rounded-2xl bg-white/40 dark:bg-white/5 border border-gray-300 dark:border-gray-800 space-y-4 hover:shadow-xl transition">
+                <h3 className="text-2xl font-semibold text-blue-500">
+                  House Rent Price Prediction
+                </h3>
+                <p className="text-gray-500 dark:text-gray-400">
+                  ML models using XGBoost & LightGBM deployed with FastAPI and Docker.
+                </p>
+                <div className="flex gap-4 pt-4">
+                  <a href="https://github.com/Nk-987" target="_blank"
+                    className="px-4 py-2 bg-gray-800 text-white rounded-lg text-sm">
+                    GitHub
+                  </a>
+                </div>
+              </div>
+            </Tilt>
+
+            {/* Project 4 */}
+            <Tilt scale={1.02}>
+              <div className="p-8 rounded-2xl bg-white/40 dark:bg-white/5 border border-gray-300 dark:border-gray-800 space-y-4 hover:shadow-xl transition">
+                <h3 className="text-2xl font-semibold text-blue-500">
+                  Sales & HR Analytics Dashboard
+                </h3>
+                <p className="text-gray-500 dark:text-gray-400">
+                  Power BI dashboards analyzing 15,000+ records with KPIs and revenue insights.
+                </p>
+                <div className="flex gap-4 pt-4">
+                  <a href="https://github.com/Nk-987" target="_blank"
+                    className="px-4 py-2 bg-gray-800 text-white rounded-lg text-sm">
+                    GitHub
+                  </a>
+                </div>
               </div>
             </Tilt>
 
           </div>
+
+          {/* View All Button */}
+          <div className="text-center pt-12">
+            <a
+              href="https://github.com/Nk-987?tab=repositories"
+              target="_blank"
+              className="px-8 py-3 bg-blue-600 text-white rounded-xl hover:scale-105 transition font-semibold"
+            >
+              View All Projects on GitHub →
+            </a>
+          </div>
+
         </motion.section>
 
         {/* CONTACT */}
