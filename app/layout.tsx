@@ -2,65 +2,47 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://portfolio-5avx-63pp5z10n-nk-987s-projects.vercel.app"),
-
-  title: {
-    default: "Nitesh Kumar | Full Stack Developer",
-    template: "%s | Nitesh Kumar",
-  },
-
+  title:
+    "Nitesh Kumar | Data Analyst · Business Intelligence · Full Stack Developer",
   description:
-    "Full Stack Developer (B.Tech 2025) specializing in backend systems, AI models, and production-ready web applications.",
-
+    "Portfolio of Nitesh Kumar — Data Analyst and Full Stack Developer focused on Python, SQL, Power BI, machine learning, backend APIs and modern web development.",
   keywords: [
     "Nitesh Kumar",
+    "Data Analyst",
+    "Business Intelligence Analyst",
+    "Power BI Developer",
+    "SQL Developer",
+    "Python Developer",
     "Full Stack Developer",
     "Backend Developer",
-    "MERN Stack",
-    "Next.js Developer",
-    "AI Developer",
-    "Portfolio",
+    "Machine Learning",
+    "React",
+    "Next.js",
+    "Node.js",
   ],
-
   authors: [{ name: "Nitesh Kumar" }],
-
+  creator: "Nitesh Kumar",
+  metadataBase: new URL("https://portfolio-5avx.vercel.app"),
   openGraph: {
-    title: "Nitesh Kumar | Full Stack Developer",
+    title: "Nitesh Kumar | Data Analyst · BI · Full Stack Developer",
     description:
-      "Explore my projects in backend development, AI systems, and full stack applications.",
-    url: "https://portfolio-5avx-63pp5z10n-nk-987s-projects.vercel.app",
-    siteName: "Nitesh Kumar Portfolio",
-    images: [
-      {
-        url: "/og.png",
-        width: 1200,
-        height: 630,
-        alt: "Nitesh Kumar Portfolio Preview",
-      },
-    ],
-    locale: "en_US",
+      "Data Analyst and Full Stack Developer focused on analytics, business intelligence, machine learning and practical software development.",
     type: "website",
+    locale: "en_IN",
+    url: "https://portfolio-5avx.vercel.app",
   },
-
   twitter: {
     card: "summary_large_image",
-    title: "Nitesh Kumar | Full Stack Developer",
+    title: "Nitesh Kumar | Data Analyst · BI · Full Stack Developer",
     description:
-      "Backend & AI focused Full Stack Developer building production-grade applications.",
-    images: ["/og.png"],
+      "Portfolio of Nitesh Kumar — Data Analyst, BI and Full Stack Developer.",
   },
-
-  robots: {
-    index: true,
-    follow: true,
-  },
+  robots: { index: true, follow: true },
 };
 
 export default function RootLayout({
   children,
-}: {
-  children: React.ReactNode;
-}) {
+}: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
       <body>{children}</body>
