@@ -1,43 +1,63 @@
-import type { Metadata } from "next";
-import "./globals.css";
+﻿import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title:
-    "Nitesh Kumar | Data Analyst · Business Intelligence · Full Stack Developer",
+  metadataBase: new URL("https://portfolio-5avx.vercel.app"),
+
+  title: {
+    default: "Nitesh Kumar | Data Analyst · Business Intelligence · Full Stack Developer",
+    template: "%s | Nitesh Kumar",
+  },
+
   description:
-    "Portfolio of Nitesh Kumar — Data Analyst and Full Stack Developer focused on Python, SQL, Power BI, machine learning, backend APIs and modern web development.",
+    "Portfolio of Nitesh Kumar — Data Analyst, Business Intelligence and Full Stack Developer skilled in SQL, Python, Power BI, React, Next.js, Node.js and NestJS.",
+
   keywords: [
     "Nitesh Kumar",
     "Data Analyst",
-    "Business Intelligence Analyst",
-    "Power BI Developer",
-    "SQL Developer",
-    "Python Developer",
+    "Business Intelligence",
+    "BI Analyst",
     "Full Stack Developer",
-    "Backend Developer",
-    "Machine Learning",
+    "Python",
+    "SQL",
+    "Power BI",
     "React",
     "Next.js",
     "Node.js",
+    "NestJS",
+    "Data Analytics",
+    "Machine Learning",
   ],
+
   authors: [{ name: "Nitesh Kumar" }],
   creator: "Nitesh Kumar",
-  metadataBase: new URL("https://portfolio-5avx.vercel.app"),
+
+  alternates: {
+    canonical: "https://portfolio-5avx.vercel.app",
+  },
+
   openGraph: {
-    title: "Nitesh Kumar | Data Analyst · BI · Full Stack Developer",
+    title:
+      "Nitesh Kumar | Data Analyst · Business Intelligence · Full Stack Developer",
     description:
-      "Data Analyst and Full Stack Developer focused on analytics, business intelligence, machine learning and practical software development.",
+      "Explore Nitesh Kumar's portfolio featuring data analytics, Power BI dashboards, machine learning, backend systems and full stack projects.",
+    url: "https://portfolio-5avx.vercel.app",
+    siteName: "Nitesh Kumar Portfolio",
     type: "website",
     locale: "en_IN",
-    url: "https://portfolio-5avx.vercel.app",
   },
+
   twitter: {
     card: "summary_large_image",
-    title: "Nitesh Kumar | Data Analyst · BI · Full Stack Developer",
+    title:
+      "Nitesh Kumar | Data Analyst · Business Intelligence · Full Stack Developer",
     description:
-      "Portfolio of Nitesh Kumar — Data Analyst, BI and Full Stack Developer.",
+      "Data Analyst, BI and Full Stack Developer portfolio — projects, experience, skills and resumes.",
   },
-  robots: { index: true, follow: true },
+
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function RootLayout({
